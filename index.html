@@ -12,6 +12,11 @@
     ></script>
   </head>
   <body>
+    <div id="loader">
+  <div class="spinner"></div>
+</div>
+
+<div id="contenido" class="oculto">
     <div class="container">
       <!-- CABECERA + MAIN -->
       <div class="header">
@@ -305,33 +310,16 @@
 
     </div>
 
-    <!-- MODAL PRODUCTO -->
-<div class="modal-producto" id="modalProducto">
-  <div class="modal-contenido">
-    
-    <button class="modal-cerrar" id="cerrarModal">✕</button>
-
-    <div class="modal-imagen">
-      <img id="modalImg" src="" alt="">
-    </div>
-
-    <div class="modal-info">
-      <h2 id="modalTitulo"></h2>
-      <p id="modalDescripcion"></p>
-
-      <ul>
-        <li><strong>Precio:</strong> <span id="modalPrecio"></span></li>
-        <li><strong>Formato:</strong> Unidad</li>
-        <li><strong>Origen:</strong> España</li>
-      </ul>
-    </div>
-
-  </div>
 </div>
-
     <script>
        window.addEventListener("load", function () {
     document.body.style.visibility = "visible";
+
+    const loader = document.getElementById("loader");
+  const contenido = document.getElementById("contenido");
+
+  loader.style.display = "none";
+  contenido.classList.add("visible");
   });
 
       $(function () {
