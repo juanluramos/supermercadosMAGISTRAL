@@ -310,23 +310,23 @@
 
     </div>
 
-</div>
-    <script>
-       window.addEventListener("load", function () {
-    document.body.style.visibility = "visible";
+    </div>
 
-    const loader = document.getElementById("loader");
+ <script>
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
   const contenido = document.getElementById("contenido");
 
-  loader.style.display = "none";
-  contenido.classList.add("visible");
-  });
+  if (loader) loader.remove();
+  if (contenido) contenido.classList.add("visible");
+});
 
-      $(function () {
-        $(".hamburguesa").on("click", function () {
-          $(".main").toggleClass("active");
-        });
-      });
-    </script>
+/* menú hamburguesa */
+$(function () {
+  $(".hamburguesa").on("click", function () {
+    $(".main").toggleClass("active");
+  });
+});
+</script>
   </body>
 </html>

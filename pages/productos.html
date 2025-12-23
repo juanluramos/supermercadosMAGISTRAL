@@ -14,6 +14,11 @@
     <script src="../js/botones-productos.js"></script>
   </head>
   <body>
+    <div id="loader">
+  <div class="spinner"></div>
+</div>
+
+<div id="contenido" class="oculto">
     <div class="container">
 
       <!-- CABECERA + MAIN -->
@@ -216,20 +221,22 @@
       </footer>
 
 </div>
-<script>
-   window.addEventListener("load", function () {
-    document.body.style.visibility = "visible";
+</div>
+ <script>
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+  const contenido = document.getElementById("contenido");
+
+  if (loader) loader.remove();
+  if (contenido) contenido.classList.add("visible");
+});
+
+/* menú hamburguesa */
+$(function () {
+  $(".hamburguesa").on("click", function () {
+    $(".main").toggleClass("active");
   });
-  
-      $(function () {
-        $(".hamburguesa").on("click", function () {
-          $(".main").toggleClass("active");
-        });
-      });
-
-
-  // Mostrar la primera por defecto
-  botones[0].click();
-    </script>
+});
+</script>
 </body>
 </html>

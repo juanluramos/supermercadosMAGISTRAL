@@ -86,6 +86,13 @@ div {
   gap: 1.5rem;
   padding: 0;
   margin: 0;
+  list-style: none;
+}
+
+.main a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
 }
 
 .main li {
@@ -93,13 +100,11 @@ div {
   font-size: 1.5rem;
   list-style: none;
   cursor: pointer;
-  position: relative;
 }
 
-.main li a {
-  text-decoration: none;
-  color: inherit;
-  display: inline-block;
+/* Subrayado inferior animado usando pseudo-elemento */
+.main li {
+  position: relative;
 }
 
 .main li::after {
@@ -469,6 +474,7 @@ div {
   font-size: 2rem;
   text-align: center;
   font-weight: bold;
+  -webkit-text-stroke: 0.5px white;
 }
 
 .banner-tienda p {
@@ -502,13 +508,14 @@ div {
 
 .tablet h2 {
   position: absolute;
-  top: 75%;
+  top: 70%;
   left: 50%;
   z-index: 2;
   color: #ff751f;
   font-size: 2rem;
   text-align: center;
   font-weight: bold;
+  -webkit-text-stroke: 0.5px white;
   text-align: center;
   padding: 0.5rem 1rem;
   background: rgba(0, 0, 0, 0.45);
@@ -527,7 +534,7 @@ div {
     grid-template-columns: 1fr;
   }
   .tablet h2 {
-    top: 70%;
+    top: 60%;
     color: #ff751f;
     font-size: 1rem;
     text-align: center;
@@ -604,8 +611,30 @@ footer {
 }
 
 .iconos-redes img {
-  width: 22px;
+  width: 32px;
   cursor: pointer;
+}
+
+/* CONTENIDO OCULTO DE VERDAD */
+#contenido {
+  opacity: 0;
+}
+
+/* CUANDO YA ESTÁ LISTO */
+#contenido.visible {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* LOADER */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: #0a3d62;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
 }
 
 /*# sourceMappingURL=style.css.map */

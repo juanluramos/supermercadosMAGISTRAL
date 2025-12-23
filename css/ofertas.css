@@ -14,42 +14,6 @@ div {
   width: 100%;
 }
 
-@media (max-width: 1200px) and (min-width: 769px) {
-  .container {
-    width: 90%;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    width: 100%;
-  }
-}
-/* LOADER */
-#loader {
-  position: fixed;
-  inset: 0;
-  background: #0a3d62; /* tu azul magistral */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-}
-
-/* Spinner */
-.spinner {
-  width: 60px;
-  height: 60px;
-  border: 6px solid rgba(255, 255, 255, 0.3);
-  border-top-color: #ff9f1a; /* naranja */
-  border-radius: 50%;
-  animation: girar 1s linear infinite;
-}
-
-@keyframes girar {
-  to {
-    transform: rotate(360deg);
-  }
-}
 /* Ocultar contenido hasta cargar */
 .oculto {
   opacity: 0;
@@ -60,6 +24,16 @@ div {
   transition: opacity 0.4s ease;
 }
 
+@media (max-width: 1200px) and (min-width: 769px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
 .header {
   position: relative;
   display: flex;
@@ -644,6 +618,31 @@ footer {
   cursor: pointer;
 }
 
+#loader {
+  position: fixed;
+  inset: 0;
+  background: #0a3d62; /* tu azul magistral */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* Spinner */
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #ff9f1a; /* naranja */
+  border-radius: 50%;
+  animation: girar 1s linear infinite;
+}
+
+@keyframes girar {
+  to {
+    transform: rotate(360deg);
+  }
+}
 .banner-ofertas {
   display: flex;
   flex-direction: row;
