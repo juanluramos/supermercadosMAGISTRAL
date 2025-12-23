@@ -1,0 +1,11 @@
+.banner-tienda {
+  margin: 4rem auto;
+}
+
+.banner-tienda h1 {
+  @include texto-banner-grande;
+}
+
+.banner-tienda p {
+  @include texto-banner-mediano;
+}

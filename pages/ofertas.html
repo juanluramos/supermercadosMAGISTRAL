@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAGISTRAL</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/ofertas.css" />
+    <script src="../js/ventana-modal.js" defer></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/botones-productos.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- CABECERA + MAIN -->
+      <div class="header">
+        <div id="logo">
+          <img src="../images/logo.png" alt="" />
+          <div>
+            <p>SUPERMERCADOS</p>
+            <h3>MAGISTRAL</h3>
+          </div>
+        </div>
+
+        <!-- BOTÓN HAMBURGUESA -->
+        <div class="menu-wrapper">
+          <div class="hamburguesa" id="btnMenu">☰</div>
+          <div class="main">
+            <ul>
+              <li><a href="../index.html">INICIO</a></li>
+              <li>OFERTAS</li>
+              <li>FOLLETOS</li>
+              <li><a href="../pages/productos.html">PRODUCTOS</a></li>
+              <li>ACCEDE</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <section class="banner-ofertas">
+        <img src="../images/miscelanea/" alt="" />
+        <div class="imagen1">
+          <img src="../images/miscelanea/mujersorpresa.png" alt="" />
+          <h2>SORPRÉNDETE CON NUESTRAS OFERTAS</h2>
+        </div>
+
+        <div class="oferta oferta-productos">
+          <img src="../images/productos/Roscon_de_Reyes.jpg" alt="" />
+          <div class="etiqueta">
+            <div class="triangulo"></div>
+            <div class="precio">
+              <div class="cantidad">
+                <span class="euro">8,</span>
+                <span class="centimos">15</span>
+              </div>
+              <span class="categoria">€/UNIDAD</span>
+            </div>
+          </div>
+          <h2>ROSCÓN DE REYES</h2>
+        </div>
+      </section>
+
+      <section class="ofertas">
+        <div class="productos-grid">
+          <div class="left-grid">
+            <div
+              class="oferta"
+              data-img="../images/productos/patatas.jpg"
+              data-titulo="Patatas a granel"
+              data-precio="2,56 €/kg"
+              data-descripcion="Patatas frescas ideales para freír."
+              data-procedencia="Procedencia: León"
+              data-calidad="Calidad: Superior"
+              data-conservacion="Conservación: Lugar seco"
+              >
+              <img src="../images/productos/patatas.jpg" alt="" />
+
+              <div class="etiqueta">
+                <div class="triangulo"></div>
+                <div class="precio">
+                  <div class="cantidad">
+                    <span class="euro">2,</span>
+                    <span class="centimos">56</span>
+                  </div>
+                  <span class="categoria">€/KILO</span>
+                </div>
+              </div>
+              <h4>PATATAS A GRANEL</h4>
+            </div>
+
+            <div class="oferta"data-img="../images/productos/tomates.jpg"
+              data-titulo="Tomates de pera a granel"
+              data-precio="1,50 €/kg"
+              data-descripcion="Tomates de pera recién cogidos de la mata."
+              data-procedencia="Procedencia: Almería"
+              data-calidad="Calidad: Superior"
+              data-conservacion="Conservación: Lugar fresco"
+              >
+              <img src="../images/productos/tomates.jpg" alt="" />
+              <div class="etiqueta">
+                <div class="triangulo"></div>
+                <div class="precio">
+                  <div class="cantidad">
+                    <span class="euro">1,</span>
+                    <span class="centimos">50</span>
+                  </div>
+                  <span class="categoria">€/KILO</span>
+                </div>
+              </div>
+              <h4>TOMATES DE PERA</h4>
+            </div>
+
+            <div class="oferta"data-img="../images/productos/esparragos.jpg"
+              data-titulo="Malla de esparragos"
+              data-precio="4,15 €/kg"
+              data-descripcion="Malla de esparragos frescos."
+              data-procedencia="Procedencia: Fuente Vaqueros - Granada"
+              data-calidad="Calidad: Superior"
+              data-conservacion="Conservación: Lugar seco"
+              >
+              <img src="../images/productos/esparragos.jpg" alt="" />
+              <div class="etiqueta">
+                <div class="triangulo"></div>
+                <div class="precio">
+                  <div class="cantidad">
+                    <span class="euro">4,</span>
+                    <span class="centimos">15</span>
+                  </div>
+                  <span class="categoria">€/MALLA</span>
+                </div>
+              </div>
+              <h4>ESPARRAGOS FRESCOS</h4>
+            </div>
+
+            <div class="oferta"
+            data-img="../images/productos/cerezas.jpg"
+              data-titulo="Cerezas"
+              data-precio="3,15 €/kg"
+              data-descripcion="Cerezas maduras y colorás."
+              data-procedencia="Procedencia: Guadix"
+              data-calidad="Calidad: Suprema"
+              data-conservacion="Conservación: Lugar seco"
+              >
+              <img src="../images/productos/cerezas.jpg" alt="" />
+              <div class="etiqueta">
+                <div class="triangulo"></div>
+                <div class="precio">
+                  <div class="cantidad">
+                    <span class="euro">3,</span>
+                    <span class="centimos">15</span>
+                  </div>
+                  <span class="categoria">€/KILO</span>
+                </div>
+              </div>
+              <h4>CEREZAS</h4>
+            </div>
+
+            <div class="oferta" data-img="../images/productos/ensalada.jpg"
+              data-titulo="Ensalada primavera"
+              data-precio="2,10 €/kg"
+              data-descripcion="Bolsa de ensalada fresca y lavada."
+              data-procedencia="Procedencia: Gurriapanda"
+              data-calidad="Calidad: Especial"
+              data-conservacion="Conservación: Lugar fresco"
+              >
+              <img src="../images/productos/ensalada.jpg" alt="" />
+              <div class="etiqueta">
+                <div class="triangulo"></div>
+                <div class="precio">
+                  <div class="cantidad">
+                    <span class="euro">2,</span>
+                    <span class="centimos">10</span>
+                  </div>
+                  <span class="categoria">BOLSA</span>
+                </div>
+              </div>
+              <h4>ENSALADA PRIMAVERA</h4>
+            </div>
+
+            <div class="oferta"data-img="../images/productos/pizza.jpg"
+              data-titulo="Pizza a la Romana - Casa Tarradellas"
+              data-precio="1,15 €/kg"
+              data-descripcion="Pizza a la Romana"
+              data-procedencia="Procedencia: Guipuzcua"
+              data-calidad="Calidad: Superior"
+              data-conservacion="Conservación: Congelador"
+              >
+              <img src="../images/productos/pizza.jpg" alt="" />
+              <div class="etiqueta">
+                <div class="triangulo"></div>
+                <div class="precio">
+                  <div class="cantidad">
+                    <span class="euro">1,</span>
+                    <span class="centimos">15</span>
+                  </div>
+                  <span class="categoria">unidad</span>
+                </div>
+              </div>
+              <h4>PIZZA ROMANA</h4>
+            </div>
+
+            <div class="oferta" data-img="../images/productos/yatekomo.jpg"
+              data-titulo="YATEKOMO - Chupipandi"
+              data-precio="0,80 €/kg"
+              data-descripcion="Sopa de fideos instantenea."
+              data-procedencia="Procedencia: Burgos"
+              data-calidad="Calidad: Superior"
+              data-conservacion="Conservación: Lugar seco"
+              >
+              <img src="../images/productos/yatekomo.jpg" alt="" />
+              <div class="etiqueta">
+                <div class="triangulo"></div>
+                <div class="precio">
+                  <div class="cantidad">
+                    <span class="euro">0,</span>
+                    <span class="centimos">80</span>
+                  </div>
+                  <span class="categoria">unidad</span>
+                </div>
+              </div>
+              <h4>YATEKOMO</h4>
+            </div>
+
+            <div class="oferta" data-img="../images/productos/jamonyork.jpg"
+              data-titulo="Jamón York el marranillo feliz"
+              data-precio="4,25 €/kg"
+              data-descripcion="Jamón York del bueno. El malo es del Mercadona."
+              data-procedencia="Procedencia: Bullullos del Condado"
+              data-calidad="Calidad: Extra 97% de Jamón de verdad"
+              data-conservacion="Conservación: Lugar fresco - comer pronto"
+              >
+              <img src="../images/productos/jamonyork.jpg" alt="" />
+              <div class="etiqueta">
+                <div class="triangulo"></div>
+                <div class="precio">
+                  <div class="cantidad">
+                    <span class="euro">4,</span>
+                    <span class="centimos">25</span>
+                  </div>
+                  <span class="categoria">200gr</span>
+                </div>
+              </div>
+              <h4>JAMON YORK EXTRA</h4>
+            </div>
+          </div>
+
+          <div class="right-grid">
+            <img src="../images/miscelanea/niño.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="banner-ofertas banner-footer">
+        <div class="imagen2">
+          <img src="../images/miscelanea/hombresorpresa.png" alt="" />
+          
+        </div>
+        <div >
+          <h2>TU DESPENSA LLENA POR MENOS</h2>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-sup">
+          <h5>
+            @ Supermercados Magistral 2025 | Aviso legal | Política de
+            privacidad | Política de cookies | Canal ético
+          </h5>
+        </div>
+        <div class="footer-inf">
+          <h5>
+            @ Supermercados Magistral 2025 | Estamos en Granada, Málaga, Almería
+            y Jaén
+          </h5>
+          <div class="iconos-redes">
+            <img src="../images/iconos/tik-tok.png" alt="" />
+            <img src="../images/iconos/instagram.png" alt="" />
+            <img src="../images/iconos/facebook.png" alt="" />
+            <img src="../images/iconos/youtube.png" alt="" />
+            <img src="../images/iconos/x.png" alt="" />
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- MODAL PRODUCTO -->
+    <div class="modal-producto" id="modalProducto">
+      <div class="modal-contenido">
+        <button class="modal-cerrar" id="cerrarModal">✕</button>
+
+        <div class="modal-imagen">
+          <img id="modalImg" src="" alt="" />
+        </div>
+
+        <div class="modal-info">
+          <h2 id="modalTitulo"></h2>
+          <p id="modalDescripcion"></p>
+          <p id="modalProcedencia"></p>
+          <p id="modalCalidad"></p>
+          <p id="modalConservacion"></p>
+          <strong id="modalPrecio"></strong>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.addEventListener("load", function () {
+        document.body.style.visibility = "visible";
+      });
+
+      $(function () {
+        $(".hamburguesa").on("click", function () {
+          $(".main").toggleClass("active");
+        });
+      });
+
+      // Mostrar la primera por defecto
+      botones[0].click();
+    </script>
+  </body>
+</html>

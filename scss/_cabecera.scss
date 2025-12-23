@@ -1,0 +1,60 @@
+.cabecera-layout-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+}
+
+.cabecera-layout-grid img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+
+
+.cabecera-left{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.cabecera-right {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.cabecera-right > div,
+.oferta {
+  position: relative; 
+  overflow: hidden;
+}
+
+.cabecera-right .triangulo {
+  width: 110px;
+  height: 90px;
+}
+.cabecera-right .triangulo::after {
+  inset: 16px;
+}
+
+ .cabecera-text{
+    @include titulo-grande;
+    text-align: center;
+    padding: 0;
+  }
+.oferta,
+.productos {
+  position: relative; /* 👈 CLAVE */
+}
+@media (max-width: 768px) {
+  .cabecera-layout-grid {
+    grid-template-columns: 1fr;
+  }
+  .cabecera-text {
+    @include titulo-pequeño;
+    text-align: center;
+ 
+  
+}
+}

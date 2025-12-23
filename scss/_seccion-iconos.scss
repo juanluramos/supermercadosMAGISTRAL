@@ -1,0 +1,38 @@
+.iconos{
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: row;
+justify-content: center;
+
+text-align: center;
+}
+
+.icono{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       max-width: 200px;
+        
+    }
+
+    h3, p{
+        color: $naranja;
+    }
+
+
+/* Imagen */
+
+.iconos img {
+  width: 60px;               /* ajusta tamaño */
+  margin-bottom: 0.75rem;
+}
+@media (max-width: 768px) {
+.iconos{
+    margin-top: 2rem;
+
+    flex-direction:column ;
+justify-content: center;
+
+text-align: center;
+}
+}

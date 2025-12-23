@@ -1,0 +1,39 @@
+    footer {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .footer-sup {
+    display: flex;    
+    align-items: center;
+    height: 4rem;
+    background-color: rgb(187, 187, 187);
+    color: $azul;
+    }
+
+    .footer-inf {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    height: 4rem;
+    background-color: $naranja;
+    color: white;
+
+    }
+
+    .footer-sup h5,
+    .footer-inf h5 {
+    margin-left: 1rem;
+    width: 100%;
+    }
+
+    .iconos-redes {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    }
+
+    .iconos-redes img {
+    width: 32px;
+    cursor: pointer;
+    }

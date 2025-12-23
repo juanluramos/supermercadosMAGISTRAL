@@ -1,0 +1,75 @@
+.oferta{
+  display: flex;
+  flex-direction: column;
+}
+
+/* GRID PRINCIPAL */
+.productos-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+}
+
+/* IZQUIERDA */
+.left-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+/* IMAGEN PRODUCTO */
+.oferta img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.left-grid .oferta .etiqueta .triangulo {
+  top: 0;
+  right: 30px;
+  width: 100px;
+  height: 100px;
+}
+.left-grid .oferta .etiqueta .precio .cantidad .euro{
+  left: 3px;
+}
+
+.left-grid .oferta .etiqueta .precio .cantidad .centimos{
+  left: 45px;
+}
+
+.oferta h4 {
+  @include titulo-pequeño;
+  margin: 0.25rem 0 0;
+  text-align: center;
+}
+
+/* DERECHA */
+.right-grid {
+    position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* IMAGEN VINO */
+.right-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .productos-grid {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .left-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .right-grid {
+    aspect-ratio: 16 / 9;
+  }
+
+}

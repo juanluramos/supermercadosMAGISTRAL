@@ -1,0 +1,58 @@
+.banner-contacto {
+  display: grid;
+  grid-template-columns: 2fr 1fr; 
+  gap: 1rem;
+
+}
+
+/* Columna izquierda */
+.banner-contacto > div:first-child {
+  overflow: hidden;
+}
+
+/* Columna derecha */
+.banner-contacto > div:last-child {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.tablet{
+    position: relative;
+}
+
+.tablet h2 {
+  position: absolute;
+  top: 75%;                
+  left: 50%; 
+  z-index: 2;  
+  
+  @include texto-banner-grande;
+  text-align: center;
+  padding: 0.5rem 1rem;
+
+  background: rgba(0,0,0,0.45); 
+  border-radius: 0.5rem;
+}
+/* Todas las imágenes */
+.banner-contacto img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .banner-contacto {
+    grid-template-columns: 1fr;
+    
+  }
+ 
+.tablet h2 {
+  
+              
+   top: 70%;
+  @include texto-banner-mediano;
+  background: rgba(0,0,0,0.45); 
+  border-radius: 0.5rem;
+}
+}

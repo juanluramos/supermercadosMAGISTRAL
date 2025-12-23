@@ -1,0 +1,210 @@
+.header {
+position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.menu-wrapper {
+  position: relative;
+}
+/* ---------- LOGO ---------- */
+.header #logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: $naranja;
+}
+
+.header img {
+  width: 100px;
+  height: auto;
+}
+
+.header #logo div {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.header #logo p {
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.15rem;
+}
+
+.header #logo h3 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.menu-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.hamburguesa{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: $naranja;
+    text-align: right;
+    margin-right: 10px;
+    
+}
+
+
+.main ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+
+  
+}
+
+
+.main li{
+    @include titulo-mediano;
+    list-style :none;
+   cursor: pointer;
+   
+}
+
+
+/* Subrayado inferior animado usando pseudo-elemento */
+
+
+.main li{
+  position: relative;
+}
+
+.main li::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 2px;
+  background: $naranja;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 220ms ease;
+}
+
+.main li:hover::after,
+.main li.is-active::after{
+  transform: scaleX(1);
+}
+
+// RESPONSIVE TABLET
+/* =========================
+   RESPONSIVE TABLET REAL
+   ========================= */
+@media (max-width: 1200px) and (min-width: 769px) {
+
+  /* Mostrar hamburguesa */
+  .hamburguesa {
+    display: block;
+    position: relative;
+    z-index: 1100;
+  }
+
+  /* Ocultar menú horizontal */
+  .main {
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    width: 280px;
+    background: white;
+
+    transform: translateY(-10px);
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 200ms ease, transform 200ms ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    z-index: 1000;
+  }
+
+  /* Menú visible */
+  .main.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  /* Lista vertical */
+  .main ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .main li {
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+
+  .main li::after {
+    display: none; /* quitamos subrayado animado en tablet */
+  }
+}
+
+
+
+
+//RESPONSIVE MOVIL@media (max-width: 768px) {
+@media (max-width: 768px) {
+
+  /* HAMBURGUESA */
+  .hamburguesa {
+    display: block;
+    position: relative;
+    z-index: 1100; /* 👈 siempre por encima del menú */
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* MENÚ FULLSCREEN */
+  
+  .main {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    transform: translateX(100%);
+    transition: transform 300ms ease;
+
+    background-color: white;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* MENÚ ACTIVO */
+  .main.active {
+    transform: translateX(0);
+  }
+
+  /* LISTA */
+  .main ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .main li {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
+}

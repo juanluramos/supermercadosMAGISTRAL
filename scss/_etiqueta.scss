@@ -1,0 +1,102 @@
+/* CONTENEDOR DE LA TARJETA */
+.oferta {
+  position: relative;
+}
+
+/* IMAGEN */
+.oferta img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ETIQUETA */
+.etiqueta {
+  position: absolute;
+  top: 10px;
+  pointer-events: none;
+  width: 110px;
+   height: 90px;
+  }
+
+.etiqueta1 {
+  left: 20px;
+}
+
+.etiqueta2 {
+  right: 20px;
+}
+
+/* TRIÁNGULO */
+.triangulo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 180px;
+  height: 150px;
+  background: $azul;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+
+   animation: pulso 3s ease-in-out infinite;
+  animation-delay: 3s; 
+}
+
+@keyframes pulso {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* BLOQUE DE PRECIO */
+.precio {
+  position: absolute;
+  color: $naranja;
+  font-weight: bold;
+ 
+
+}
+
+.euro {
+  position: absolute;
+  font-size: 4.5rem;
+  line-height: 1;
+  top: 7px;
+  left: 13px;
+   -webkit-text-stroke: 1px white;
+}
+
+.centimos {
+ position: absolute;
+  font-size: 2.2rem;
+ top: 9px;
+  left: 50px;
+   -webkit-text-stroke: 0.5px white;
+  
+}
+
+/* CATEGORÍA */
+.categoria {
+  position: absolute;
+  font-size: 0.8rem;
+  left: 30px;
+}
+
+
+
+
+
+
+@media (max-width: 1200px) and (min-width: 769px){
+
+}
+
+@media (max-width: 768px) {
+
+
+}

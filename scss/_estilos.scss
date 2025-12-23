@@ -1,0 +1,95 @@
+body{
+    border: 0;
+    margin: 0;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div{
+    width: 100%;
+   
+}
+
+$naranja: #ff751f;
+$azul: #02224b;
+$blanco: white;
+
+@mixin titulo-grande{
+    color: $naranja;
+    font-size: 2rem;
+}
+
+@mixin titulo-mediano{
+    color: $naranja;
+    font-size: 1.5rem;
+}
+
+@mixin titulo-pequeño{
+    color: $naranja;
+    font-size: 1rem;
+}
+
+@mixin texto-banner-grande{
+    color: $naranja;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px white;
+}
+@mixin texto-banner-mediano{
+    color: $naranja;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+          
+}
+
+@mixin texto-banner-pequeno{
+    color: $naranja;
+    font-size: 1rem;
+}
+
+@mixin texto-banner-fondo{
+    color: $azul;
+    font-size: 4rem;    
+     -webkit-text-stroke: 2px white;
+}
+
+@mixin texto-banner-fondo-movil{
+    color: $azul;
+    font-size: 4rem;
+     -webkit-text-stroke: 1px white;
+}
+
+@mixin texto-banner-productos-xl{
+    color: $naranja;
+    font-size: 3rem;
+    -webkit-text-stroke: 0.5px white;
+}
+@mixin texto-banner-productos-l{
+    color: $naranja;
+    font-size: 2rem;
+    -webkit-text-stroke: 0.5px white;
+}
+// RESPONSIVE TABLET
+@media (max-width: 1200px) and (min-width: 769px) {
+.container{
+    width: 90%;
+    
+}
+
+}
+
+//RESPONSIVE MOVIL
+@media (max-width: 768px) {
+
+.container{
+    width: 100%;
+    
+}
+
+}
