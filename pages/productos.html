@@ -1,242 +1,236 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MAGISTRAL</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/productos.css"/>
-    
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.js"
-      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-      crossorigin="anonymous"></script>
-    <script src="../js/botones-productos.js"></script>
-  </head>
-  <body>
-    <div id="loader">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAGISTRAL</title>
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/productos.css"/>
+
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous">
+  </script>
+
+  <script src="../js/botones-productos.js"></script>
+</head>
+
+<body>
+
+<div id="loader">
   <div class="spinner"></div>
 </div>
 
 <div id="contenido" class="oculto">
-    <div class="container">
 
-      <!-- CABECERA + MAIN -->
-      <div class="header">
-        <div id="logo">
-          <img src="../images/logo.png" alt="" />
-          <div>
-            <p>SUPERMERCADOS</p>
-            <h3>MAGISTRAL</h3>
-          </div>
-        </div>
+  <div class="container">
 
-        <!-- BOTÓN HAMBURGUESA -->
-        <div class="menu-wrapper">
-          <div class="hamburguesa" id="btnMenu">☰</div>
-          <div class="main">
-            <ul>
-              <li><a href="../index.html">INICIO</a></li>
-              <li><a href="../pages/ofertas.html">OFERTAS</a></li>
-              <li>FOLLETOS</li>
-              <li><a href="">PRODUCTOS</a></li>
-              <li>ACCEDE</li>
-            </ul>
-          </div>
+    <div class="header">
+      <div id="logo">
+        <img src="../images/logo.png" alt="" />
+        <div>
+          <p>SUPERMERCADOS</p>
+          <h3>MAGISTRAL</h3>
         </div>
       </div>
 
-
-<div class="layout">
-  <!-- ===== MENÚ LATERAL ===== -->
- <aside class="menu-lateral">
-    <div class="menu-categoria">
-    <h3>Categorías</h3>
-    <button class="toggle-categoria" aria-label="Mostrar categoría">
-      +
-    </button>
-    </div>
- 
-    <ul>
-      <li data-cat="carniceria">🥩 Carnicería</li>
-      <li data-cat="pescaderia">🐟 Pescadería</li>
-      <li data-cat="limpieza">🧼 Limpieza</li>
-      <li data-cat="bebidas">🥤 Bebidas</li>
-      <li data-cat="panaderia">🥖 Panadería</li>
-    </ul>
-  </aside>
- 
-  <!-- ===== CONTENIDO ===== -->
-  <main class="contenido">
-   
-  
-<!-- ================= CARNICERÍA ================= -->
-<section id="carniceria" class="categoria-producto">  
-  <div class="section-categoria">
-    <img src="../images/fondos/carne.png" alt="">
-    <h2>Carnicería</h2>
-  </div>
-  
-  <div class="grid">
-    <article class="producto"><h4>Pollo entero</h4><span>3,95 €/kg</span></article>
-    <article class="producto"><h4>Pechuga de pollo</h4><span>6,90 €/kg</span></article>
-    <article class="producto"><h4>Muslos de pollo</h4><span>4,80 €/kg</span></article>
-    <article class="producto"><h4>Ternera fileteada</h4><span>12,90 €/kg</span></article>
-    <article class="producto"><h4>Carne picada</h4><span>7,50 €/kg</span></article>
-    <article class="producto"><h4>Chuletas de cerdo</h4><span>5,90 €/kg</span></article>
-    <article class="producto"><h4>Lomo fresco</h4><span>6,40 €/kg</span></article>
-    <article class="producto"><h4>Costillas</h4><span>4,95 €/kg</span></article>
-    <article class="producto"><h4>Hamburguesas</h4><span>2,50 €</span></article>
-    <article class="producto"><h4>Salchichas frescas</h4><span>3,20 €</span></article>
-    <article class="producto"><h4>Jamón cocido</h4><span>1,80 €</span></article>
-    <article class="producto"><h4>Chorizo</h4><span>2,10 €</span></article>
-    <article class="producto"><h4>Longaniza</h4><span>2,30 €</span></article>
-    <article class="producto"><h4>Morcilla</h4><span>1,90 €</span></article>
-    <article class="producto"><h4>Secreto ibérico</h4><span>9,90 €/kg</span></article>
-  </div>
-</section>
-
-<!-- ================= PESCADERÍA ================= -->
-<section id="pescaderia" class="categoria-producto">
-  <div class="section-categoria">
-    <img src="../images/fondos/pescado.png" alt="">
-    <h2>Pescadería</h2>
-  </div>
-  <div class="grid">
-    <article class="producto"><h4>Merluza</h4><span>8,90 €/kg</span></article>
-    <article class="producto"><h4>Dorada</h4><span>7,50 €/kg</span></article>
-    <article class="producto"><h4>Lubina</h4><span>8,20 €/kg</span></article>
-    <article class="producto"><h4>Salmón</h4><span>12,90 €/kg</span></article>
-    <article class="producto"><h4>Atún</h4><span>10,50 €/kg</span></article>
-    <article class="producto"><h4>Boquerones</h4><span>3,90 €/kg</span></article>
-    <article class="producto"><h4>Sardinas</h4><span>2,95 €/kg</span></article>
-    <article class="producto"><h4>Calamares</h4><span>9,50 €/kg</span></article>
-    <article class="producto"><h4>Pulpo cocido</h4><span>18,90 €/kg</span></article>
-    <article class="producto"><h4>Gambas</h4><span>14,90 €/kg</span></article>
-    <article class="producto"><h4>Langostinos</h4><span>11,90 €/kg</span></article>
-    <article class="producto"><h4>Mejillones</h4><span>2,40 €/kg</span></article>
-    <article class="producto"><h4>Almejas</h4><span>9,80 €/kg</span></article>
-    <article class="producto"><h4>Caballa</h4><span>4,20 €/kg</span></article>
-    <article class="producto"><h4>Trucha</h4><span>6,50 €/kg</span></article>
-  </div>
-</section>
-
-<!-- ================= LIMPIEZA ================= -->
-<section id="limpieza" class="categoria-producto">
-  <div class="section-categoria">
-    <img src="../images/fondos/limpieza.png" alt="">
-  <h2>Limpieza</h2>
-  </div>
-  <div class="grid">    
-    <article class="producto"><h4>Fairy</h4><span>1,63 €</span></article>
-    <article class="producto"><h4>Lejía</h4><span>0,75 €</span></article>
-    <article class="producto"><h4>Detergente lavadora</h4><span>4,95 €</span></article>
-    <article class="producto"><h4>Suavizante</h4><span>2,80 €</span></article>
-    <article class="producto"><h4>Limpiacristales</h4><span>1,20 €</span></article>
-    <article class="producto"><h4>Friegasuelos</h4><span>1,50 €</span></article>
-    <article class="producto"><h4>Desengrasante</h4><span>2,10 €</span></article>
-    <article class="producto"><h4>Bayetas</h4><span>1,00 €</span></article>
-    <article class="producto"><h4>Estropajos</h4><span>0,95 €</span></article>
-    <article class="producto"><h4>Papel de cocina</h4><span>2,30 €</span></article>
-    <article class="producto"><h4>Papel higiénico</h4><span>3,95 €</span></article>
-    <article class="producto"><h4>Quitamanchas</h4><span>2,75 €</span></article>
-    <article class="producto"><h4>Ambientador</h4><span>1,80 €</span></article>
-    <article class="producto"><h4>Limpiabaños</h4><span>1,40 €</span></article>
-    <article class="producto"><h4>Lavavajillas máquina</h4><span>5,20 €</span></article>
-    </div>
-  </section>
-
-<!-- ================= BEBIDAS ================= -->
-<section id="bebidas" class="categoria-producto">
-    <div class="section-categoria">
-    <img src="../images/fondos/bebidas.png" alt="">
-  <h2> Bebidas</h2>
-    </div>
-  <div class="grid">
-    <article class="producto"><h4>Agua mineral</h4><span>0,45 €</span></article>
-    <article class="producto"><h4>Agua con gas</h4><span>0,55 €</span></article>
-    <article class="producto"><h4>Coca-Cola</h4><span>1,30 €</span></article>
-    <article class="producto"><h4>Naranja</h4><span>1,20 €</span></article>
-    <article class="producto"><h4>Limón</h4><span>1,20 €</span></article>
-    <article class="producto"><h4>Cerveza</h4><span>0,90 €</span></article>
-    <article class="producto"><h4>Vino tinto</h4><span>2,95 €</span></article>
-    <article class="producto"><h4>Vino blanco</h4><span>2,80 €</span></article>
-    <article class="producto"><h4>Bebida isotónica</h4><span>1,10 €</span></article>
-    <article class="producto"><h4>Tónica</h4><span>0,85 €</span></article>
-    <article class="producto"><h4>Zumos variados</h4><span>1,50 €</span></article>
-    <article class="producto"><h4>Batido chocolate</h4><span>1,25 €</span></article>
-    <article class="producto"><h4>Café frío</h4><span>1,60 €</span></article>
-    <article class="producto"><h4>Agua saborizada</h4><span>0,95 €</span></article>
-    <article class="producto"><h4>Refresco cola</h4><span>0,90 €</span></article>
-  </div>
-</section>
-
-<!-- ================= PANADERÍA ================= -->
-<section id="panaderia" class="categoria-producto">
-    <div class="section-categoria">
-    <img src="../images/fondos/panaderia.png" alt="">  
-  <h2>Panadería</h2>
-  </div>
-  <div class="grid">
-    <article class="producto"><h4>Barra de pan</h4><span>0,60 €</span></article>
-    <article class="producto"><h4>Pan integral</h4><span>1,10 €</span></article>
-    <article class="producto"><h4>Baguette</h4><span>0,90 €</span></article>
-    <article class="producto"><h4>Mollete</h4><span>0,50 €</span></article>
-    <article class="producto"><h4>Pan de semillas</h4><span>1,30 €</span></article>
-    <article class="producto"><h4>Croissant</h4><span>0,75 €</span></article>
-    <article class="producto"><h4>Napolitana</h4><span>1,10 €</span></article>
-    <article class="producto"><h4>Ensaimada</h4><span>1,40 €</span></article>
-    <article class="producto"><h4>Pan de molde</h4><span>1,25 €</span></article>
-    <article class="producto"><h4>Rosquilla</h4><span>0,85 €</span></article>
-    <article class="producto"><h4>Bizcocho</h4><span>2,20 €</span></article>
-    <article class="producto"><h4>Tarta pequeña</h4><span>6,90 €</span></article>
-    <article class="producto"><h4>Donut</h4><span>0,95 €</span></article>
-    <article class="producto"><h4>Pan rústico</h4><span>1,60 €</span></article>
-    <article class="producto"><h4>Hogaza</h4><span>2,30 €</span></article>
-  </div>
-</section>
-</main>
-</div>
-
-      <footer>
-        <div class="footer-sup">
-          <h5>
-            @ Supermercados Magistral 2025 | Aviso legal | Política de
-            privacidad | Política de cookies | Canal ético
-          </h5>
+      <div class="menu-wrapper">
+        <div class="hamburguesa" id="btnMenu">☰</div>
+        <div class="main">
+          <ul>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="../pages/ofertas.html">OFERTAS</a></li>
+            <li>FOLLETOS</li>
+            <li><a href="">PRODUCTOS</a></li>
+            <li>ACCEDE</li>
+          </ul>
         </div>
-        <div class="footer-inf">
-          <h5>
-            @ Supermercados Magistral 2025 | Estamos en Granada, Málaga, Almería
-            y Jaén
-          </h5>
-          <div class="iconos-redes">
-            <img src="../images/iconos/tik-tok.png" alt="" />
-            <img src="../images/iconos/instagram.png" alt="" />
-            <img src="../images/iconos/facebook.png" alt="" />
-            <img src="../images/iconos/youtube.png" alt="" />
-            <img src="../images/iconos/x.png" alt="" />
+      </div>
+    </div>
+
+    <div class="layout">
+
+      <aside class="menu-lateral">
+        <div class="menu-categoria">
+          <h3>Categorías</h3>
+          <button class="toggle-categoria" aria-label="Mostrar categoría">+</button>
+        </div>
+
+        <ul>
+          <li data-cat="carniceria">🥩 Carnicería</li>
+          <li data-cat="pescaderia">🐟 Pescadería</li>
+          <li data-cat="limpieza">🧼 Limpieza</li>
+          <li data-cat="bebidas">🥤 Bebidas</li>
+          <li data-cat="panaderia">🥖 Panadería</li>
+        </ul>
+      </aside>
+
+      <main class="contenido">
+
+        <section id="carniceria" class="categoria-producto">
+          <div class="section-categoria">
+            <img src="../images/fondos/carne.png" alt="">
+            <h2>Carnicería</h2>
           </div>
-        </div>
-      </footer>
+
+          <div class="grid">
+            <article class="producto"><h4>Pollo entero</h4><span>3,95 €/kg</span></article>
+            <article class="producto"><h4>Pechuga de pollo</h4><span>6,90 €/kg</span></article>
+            <article class="producto"><h4>Muslos de pollo</h4><span>4,80 €/kg</span></article>
+            <article class="producto"><h4>Ternera fileteada</h4><span>12,90 €/kg</span></article>
+            <article class="producto"><h4>Carne picada</h4><span>7,50 €/kg</span></article>
+            <article class="producto"><h4>Chuletas de cerdo</h4><span>5,90 €/kg</span></article>
+            <article class="producto"><h4>Lomo fresco</h4><span>6,40 €/kg</span></article>
+            <article class="producto"><h4>Costillas</h4><span>4,95 €/kg</span></article>
+            <article class="producto"><h4>Hamburguesas</h4><span>2,50 €</span></article>
+            <article class="producto"><h4>Salchichas frescas</h4><span>3,20 €</span></article>
+            <article class="producto"><h4>Jamón cocido</h4><span>1,80 €</span></article>
+            <article class="producto"><h4>Chorizo</h4><span>2,10 €</span></article>
+            <article class="producto"><h4>Longaniza</h4><span>2,30 €</span></article>
+            <article class="producto"><h4>Morcilla</h4><span>1,90 €</span></article>
+            <article class="producto"><h4>Secreto ibérico</h4><span>9,90 €/kg</span></article>
+          </div>
+        </section>
+
+        <section id="pescaderia" class="categoria-producto">
+          <div class="section-categoria">
+            <img src="../images/fondos/pescado.png" alt="">
+            <h2>Pescadería</h2>
+          </div>
+
+          <div class="grid">
+            <article class="producto"><h4>Merluza</h4><span>8,90 €/kg</span></article>
+            <article class="producto"><h4>Dorada</h4><span>7,50 €/kg</span></article>
+            <article class="producto"><h4>Lubina</h4><span>8,20 €/kg</span></article>
+            <article class="producto"><h4>Salmón</h4><span>12,90 €/kg</span></article>
+            <article class="producto"><h4>Atún</h4><span>10,50 €/kg</span></article>
+            <article class="producto"><h4>Boquerones</h4><span>3,90 €/kg</span></article>
+            <article class="producto"><h4>Sardinas</h4><span>2,95 €/kg</span></article>
+            <article class="producto"><h4>Calamares</h4><span>9,50 €/kg</span></article>
+            <article class="producto"><h4>Pulpo cocido</h4><span>18,90 €/kg</span></article>
+            <article class="producto"><h4>Gambas</h4><span>14,90 €/kg</span></article>
+            <article class="producto"><h4>Langostinos</h4><span>11,90 €/kg</span></article>
+            <article class="producto"><h4>Mejillones</h4><span>2,40 €/kg</span></article>
+            <article class="producto"><h4>Almejas</h4><span>9,80 €/kg</span></article>
+            <article class="producto"><h4>Caballa</h4><span>4,20 €/kg</span></article>
+            <article class="producto"><h4>Trucha</h4><span>6,50 €/kg</span></article>
+          </div>
+        </section>
+
+        <section id="limpieza" class="categoria-producto">
+          <div class="section-categoria">
+            <img src="../images/fondos/limpieza.png" alt="">
+            <h2>Limpieza</h2>
+          </div>
+
+          <div class="grid">
+            <article class="producto"><h4>Fairy</h4><span>1,63 €</span></article>
+            <article class="producto"><h4>Lejía</h4><span>0,75 €</span></article>
+            <article class="producto"><h4>Detergente lavadora</h4><span>4,95 €</span></article>
+            <article class="producto"><h4>Suavizante</h4><span>2,80 €</span></article>
+            <article class="producto"><h4>Limpiacristales</h4><span>1,20 €</span></article>
+            <article class="producto"><h4>Friegasuelos</h4><span>1,50 €</span></article>
+            <article class="producto"><h4>Desengrasante</h4><span>2,10 €</span></article>
+            <article class="producto"><h4>Bayetas</h4><span>1,00 €</span></article>
+            <article class="producto"><h4>Estropajos</h4><span>0,95 €</span></article>
+            <article class="producto"><h4>Papel de cocina</h4><span>2,30 €</span></article>
+            <article class="producto"><h4>Papel higiénico</h4><span>3,95 €</span></article>
+            <article class="producto"><h4>Quitamanchas</h4><span>2,75 €</span></article>
+            <article class="producto"><h4>Ambientador</h4><span>1,80 €</span></article>
+            <article class="producto"><h4>Limpiabaños</h4><span>1,40 €</span></article>
+            <article class="producto"><h4>Lavavajillas máquina</h4><span>5,20 €</span></article>
+          </div>
+        </section>
+
+        <section id="bebidas" class="categoria-producto">
+          <div class="section-categoria">
+            <img src="../images/fondos/bebidas.png" alt="">
+            <h2>Bebidas</h2>
+          </div>
+
+          <div class="grid">
+            <article class="producto"><h4>Agua mineral</h4><span>0,45 €</span></article>
+            <article class="producto"><h4>Agua con gas</h4><span>0,55 €</span></article>
+            <article class="producto"><h4>Coca-Cola</h4><span>1,30 €</span></article>
+            <article class="producto"><h4>Naranja</h4><span>1,20 €</span></article>
+            <article class="producto"><h4>Limón</h4><span>1,20 €</span></article>
+            <article class="producto"><h4>Cerveza</h4><span>0,90 €</span></article>
+            <article class="producto"><h4>Vino tinto</h4><span>2,95 €</span></article>
+            <article class="producto"><h4>Vino blanco</h4><span>2,80 €</span></article>
+            <article class="producto"><h4>Bebida isotónica</h4><span>1,10 €</span></article>
+            <article class="producto"><h4>Tónica</h4><span>0,85 €</span></article>
+            <article class="producto"><h4>Zumos variados</h4><span>1,50 €</span></article>
+            <article class="producto"><h4>Batido chocolate</h4><span>1,25 €</span></article>
+            <article class="producto"><h4>Café frío</h4><span>1,60 €</span></article>
+            <article class="producto"><h4>Agua saborizada</h4><span>0,95 €</span></article>
+            <article class="producto"><h4>Refresco cola</h4><span>0,90 €</span></article>
+          </div>
+        </section>
+
+        <section id="panaderia" class="categoria-producto">
+          <div class="section-categoria">
+            <img src="../images/fondos/panaderia.png" alt="">
+            <h2>Panadería</h2>
+          </div>
+
+          <div class="grid">
+            <article class="producto"><h4>Barra de pan</h4><span>0,60 €</span></article>
+            <article class="producto"><h4>Pan integral</h4><span>1,10 €</span></article>
+            <article class="producto"><h4>Baguette</h4><span>0,90 €</span></article>
+            <article class="producto"><h4>Mollete</h4><span>0,50 €</span></article>
+            <article class="producto"><h4>Pan de semillas</h4><span>1,30 €</span></article>
+            <article class="producto"><h4>Croissant</h4><span>0,75 €</span></article>
+            <article class="producto"><h4>Napolitana</h4><span>1,10 €</span></article>
+            <article class="producto"><h4>Ensaimada</h4><span>1,40 €</span></article>
+            <article class="producto"><h4>Pan de molde</h4><span>1,25 €</span></article>
+            <article class="producto"><h4>Rosquilla</h4><span>0,85 €</span></article>
+            <article class="producto"><h4>Bizcocho</h4><span>2,20 €</span></article>
+            <article class="producto"><h4>Tarta pequeña</h4><span>6,90 €</span></article>
+            <article class="producto"><h4>Donut</h4><span>0,95 €</span></article>
+            <article class="producto"><h4>Pan rústico</h4><span>1,60 €</span></article>
+            <article class="producto"><h4>Hogaza</h4><span>2,30 €</span></article>
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+
+    <footer>
+      <div class="footer-sup">
+        <h5>
+          @ Supermercados Magistral 2025 | Aviso legal | Política de privacidad | Política de cookies | Canal ético
+        </h5>
+      </div>
+
+      <div class="footer-inf">
+        <h5>
+          @ Supermercados Magistral 2025 | Estamos en Granada, Málaga, Almería y Jaén
+        </h5>
+      </div>
+    </footer>
+
+  </div>
 
 </div>
-</div>
- <script>
-window.addEventListener("load", () => {
-  const loader = document.getElementById("loader");
-  const contenido = document.getElementById("contenido");
 
-  if (loader) loader.remove();
-  if (contenido) contenido.classList.add("visible");
-});
+<script>
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    const contenido = document.getElementById("contenido");
 
-/* menú hamburguesa */
-$(function () {
-  $(".hamburguesa").on("click", function () {
-    $(".main").toggleClass("active");
+    if (loader) loader.remove();
+    if (contenido) contenido.classList.add("visible");
   });
-});
+
+  $(function () {
+    $(".hamburguesa").on("click", function () {
+      $(".main").toggleClass("active");
+    });
+  });
 </script>
+
 </body>
 </html>

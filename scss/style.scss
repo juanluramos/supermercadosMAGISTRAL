@@ -13,19 +13,19 @@
 /* CONTENIDO OCULTO DE VERDAD */
 #contenido {
   opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 /* CUANDO YA ESTÁ LISTO */
 #contenido.visible {
   opacity: 1;
-  transition: opacity 0.3s ease;
 }
 
 /* LOADER */
 #loader {
   position: fixed;
   inset: 0;
-  background: #0a3d62;
+  background: rgba(0, 102, 204, 0.1);   /* 90% transparente */
   display: flex;
   align-items: center;
   justify-content: center;

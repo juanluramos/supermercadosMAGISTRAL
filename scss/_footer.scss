@@ -37,3 +37,33 @@
     width: 32px;
     cursor: pointer;
     }
+
+
+@media (max-width: 768px) {
+
+ 
+  .footer-inf {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    
+  }
+
+  .footer-sup h5,
+  .footer-inf h5 {
+    margin-left: 0;
+    width: auto;
+    text-align: center;
+  }
+
+  .iconos-redes {
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .iconos-redes img {
+    width: 26px;
+    
+  }
+}

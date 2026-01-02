@@ -93,10 +93,94 @@
 
 
 @media (max-width: 1200px) and (min-width: 769px){
+.etiqueta {
+   width: 90px;
+   height: 70px;
+  }
 
+.etiqueta1 {
+  left: 20px;
+}
+
+.etiqueta2 {
+  right: 10px;
+}
+
+/* TRIÁNGULO */
+.triangulo {
+ 
+  width: 70px;
+  height: 80px;
+
+}
+/* BLOQUE DE PRECIO */
+
+.euro {
+  font-size: 2.5rem;
+  line-height: 1;
+  top: 12px;
+  left: 13px;
+   -webkit-text-stroke: 1px white;
+}
+
+.centimos {
+ position: absolute;
+  font-size: 1.2rem;
+ top: 9px;
+   -webkit-text-stroke: 0.5px white;
+   left: 50px;
+}
+
+/* CATEGORÍA */
+.categoria {
+
+  left: 13px;
+}
 }
 
 @media (max-width: 768px) {
 
+.etiqueta {
+   width: 90px;
+   height: 70px;
+  }
 
+.etiqueta1 {
+  left: 20px;
+}
+
+.etiqueta2 {
+  right: 20px;
+}
+
+/* TRIÁNGULO */
+.triangulo {
+ 
+  width: 130px;
+  height: 110px;
+
+}
+/* BLOQUE DE PRECIO */
+
+.euro {
+  font-size: 3.5rem;
+  line-height: 1;
+  top: 7px;
+  left: 13px;
+   -webkit-text-stroke: 1px white;
+}
+
+.centimos {
+ position: absolute;
+  font-size: 1.2rem;
+ top: 9px;
+   -webkit-text-stroke: 0.5px white;
+  
+}
+
+/* CATEGORÍA */
+.categoria {
+
+  left: 13px;
+}
 }
